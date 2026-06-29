@@ -15,21 +15,21 @@ GitHub Pages je zpusob, jak z repozitare udelat web. Vezmes Markdown, trochu ho 
 
 <style>
   .doc-chat-launch {
-    margin: 24px 0 28px;
+    margin: 8px 0 12px;
   }
 
   .doc-chat-launch__button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 44px;
+    min-height: 40px;
     border: 0;
-    border-radius: 6px;
-    padding: 0 18px;
+    border-radius: 4px;
+    padding: 0 16px;
     background: #1f6feb;
     color: #fff;
     font: inherit;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
   }
 
@@ -44,7 +44,7 @@ GitHub Pages je zpusob, jak z repozitare udelat web. Vezmes Markdown, trochu ho 
 </style>
 
 <div class="doc-chat-launch">
-  <button type="button" class="doc-chat-launch__button" onclick="window.openKrameriusDocChat()">Otevrit AI chat</button>
+  <button type="button" class="doc-chat-launch__button" onclick="window.openKrameriusDocChat()">🤖 Zeptat se AI</button>
 </div>
 
 <kramerius-doc-chat api-url="https://vasearch.inovatika.dev/kramerius-doc-api"></kramerius-doc-chat>
