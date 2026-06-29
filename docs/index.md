@@ -13,6 +13,52 @@ GitHub Pages je zpusob, jak z repozitare udelat web. Vezmes Markdown, trochu ho 
 - [Jak to funguje](jak-to-funguje.md) - kratke vysvetleni bez prednaskove mlhy.
 - [Caste prusvihy](caste-prusvihy.md) - kdyz se web tvari, ze neexistuje.
 
+<style>
+  .doc-chat-launch {
+    margin: 24px 0 28px;
+  }
+
+  .doc-chat-launch__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    border: 0;
+    border-radius: 6px;
+    padding: 0 18px;
+    background: #1f6feb;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .doc-chat-launch__button:hover {
+    background: #1a5fc8;
+  }
+
+  .doc-chat-launch__button:focus-visible {
+    outline: 3px solid rgba(31, 111, 235, 0.32);
+    outline-offset: 3px;
+  }
+</style>
+
+<div class="doc-chat-launch">
+  <button type="button" class="doc-chat-launch__button" onclick="window.openKrameriusDocChat()">Otevrit AI chat</button>
+</div>
+
+<kramerius-doc-chat api-url="https://vasearch.inovatika.dev/kramerius-doc-api"></kramerius-doc-chat>
+<script>
+  window.openKrameriusDocChat = function () {
+    if (!window.krameriusDocChat) {
+      throw new Error('Kramerius doc chat neni nacteny.');
+    }
+
+    window.krameriusDocChat.open();
+  };
+</script>
+<script type="module" src="assets/kramerius-doc-chat-ui/main.js"></script>
+
 ## Minimalni recept
 
 1. Dej Markdown souborum jmena, ktera davaji smysl.
