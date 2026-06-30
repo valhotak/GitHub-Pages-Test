@@ -57,7 +57,7 @@ GitHub Pages je zpusob, jak z repozitare udelat web. Vezmes Markdown, trochu ho 
     window.krameriusDocChat.open();
   };
 </script>
-<script type="module" src="assets/kramerius-doc-chat-ui/main.js"></script>
+<script type="module" src="assets/kramerius-doc-chat-ui/doc-chat-ui.js"></script>
 
 ## Minimalni recept
 
