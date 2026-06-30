@@ -47,7 +47,7 @@ GitHub Pages je zpusob, jak z repozitare udelat web. Vezmes Markdown, trochu ho 
   <button type="button" class="doc-chat-launch__button" onclick="window.openKrameriusDocChat()">🤖 Zeptat se AI</button>
 </div>
 
-<kramerius-doc-chat api-url="https://vasearch.inovatika.dev/kramerius-doc-api"></kramerius-doc-chat>
+<kramerius-doc-chat api-url="https://vasearch.inovatika.dev/kramerius-doc-api" use-mock-response=true></kramerius-doc-chat>
 <script>
   window.openKrameriusDocChat = function () {
     if (!window.krameriusDocChat) {
